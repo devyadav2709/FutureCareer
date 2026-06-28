@@ -166,6 +166,10 @@ Replace the images below with your own screenshots.
 
 ### Prediction Result
 
+![Prediction Result](https://github.com/user-attachments/assets/89a75482-b602-425d-8e7b-6a8d88a91d86)
+![Prediction Result](https://github.com/user-attachments/assets/791afc3f-efbe-4015-84e8-ab3cac9de811)
+![Prediction Result](https://github.com/user-attachments/assets/9738ca41-c6f0-4198-9946-9ecfd63f9ea1)
+
 ```markdown
 ![Result](screenshots/result.png)
 ```
