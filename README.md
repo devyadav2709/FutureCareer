@@ -128,7 +128,7 @@ Replace the images below with your own screenshots.
 ### Home Page
 
 
-[screenshots/home.png](https://github.com/user-attachments/assets/3d980345-87d7-4fdd-9680-f4d52aedc3ba)
+![Home Page](https://github.com/user-attachments/assets/3d980345-87d7-4fdd-9680-f4d52aedc3ba)
 
 ```markdown
 ![Home](screenshots/home.png)
