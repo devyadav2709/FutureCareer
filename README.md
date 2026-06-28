@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎯 Career Prediction and Recommendation System
+# Future Career System
 
 ### A Full Stack Web Application for Career Guidance
 
@@ -130,26 +130,6 @@ Replace the images below with your own screenshots.
 
 ![Home Page](https://github.com/user-attachments/assets/3d980345-87d7-4fdd-9680-f4d52aedc3ba)
 
-```markdown
-![Home](screenshots/home.png)
-```
-
----
-
-### Login Page
-
-```markdown
-![Login](screenshots/login.png)
-```
-
----
-
-### Registration Page
-
-```markdown
-![Register](screenshots/register.png)
-```
-
 ---
 
 ### Career Prediction Form
@@ -158,10 +138,6 @@ Replace the images below with your own screenshots.
 ![Career Prediction Form](https://github.com/user-attachments/assets/a75600a7-09cd-410d-a11c-5e6d31c2cc3f)
 ![Career Prediction Form](https://github.com/user-attachments/assets/0ee3b3e8-7741-410f-ac3b-26bebd1817bb)
 
-```markdown
-![Career Form](screenshots/form.png)
-```
-
 ---
 
 ### Prediction Result
@@ -169,18 +145,6 @@ Replace the images below with your own screenshots.
 ![Prediction Result](https://github.com/user-attachments/assets/89a75482-b602-425d-8e7b-6a8d88a91d86)
 ![Prediction Result](https://github.com/user-attachments/assets/791afc3f-efbe-4015-84e8-ab3cac9de811)
 ![Prediction Result](https://github.com/user-attachments/assets/9738ca41-c6f0-4198-9946-9ecfd63f9ea1)
-
-```markdown
-![Result](screenshots/result.png)
-```
-
----
-
-### User Profile
-
-```markdown
-![Profile](screenshots/profile.png)
-```
 
 ---
 
