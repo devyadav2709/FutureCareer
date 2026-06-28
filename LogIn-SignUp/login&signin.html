@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Future Career Prediction</title>
+
+    <link href="C:/xampp/htdocs/Project/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at center, #0a0a2a 0%, #000010 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #0a0a2a;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .login-container h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #0a0a2a;
+        }
+
+        .form-control {
+            background: #b3b3c4b3;
+            border: none;
+            color: #000000;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px #0d0d4f91;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #ffffffab;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+
+        .toggle-link {
+            color: #2a00d2;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .rocket {
+            position: absolute;
+            width: 200px;
+            animation: flyRocket 5s infinite linear;
+            z-index: 0;
+        }
+
+        @keyframes flyRocket {
+            0% {
+                transform: translate(-100vw, 100vh) rotate(45deg);
+            }
+
+            100% {
+                transform: translate(100vw, -100vh) rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- background image -->
+    <img src="Images/rocket.png" class="rocket" alt="Rocket Image">
+
+    <div class="login-container">
+        <h3><b>Future Career Prediction</b></h3>
+
+        <!-- Login Form -->
+        <div id="loginForm">
+            <h4 style="font-size: 23px; margin-bottom: 20px;"><b>Login</b></h4>
+            <form action="login.php" method="POST">
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required />
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Login</button>
+            </form>
+            <p class="mt-3">Don't have an account? <b><span class="toggle-link" onclick="toggleForm('signup')">Sign
+                        Up</span></b></p>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div id="signupForm" style="display: none;">
+            <h4 style="font-size: 23px; margin-bottom: 20px;"><b>Sign Up</b></h4>
+            <form action="signup.php" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="full_name" placeholder="Full Name" required />
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required />
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Sign Up</button>
+            </form>
+            <p class="mt-3">Already have an account? <span class="toggle-link"
+                    onclick="toggleForm('login')"><b>Login</b></span></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function toggleForm(formType) {
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        if (formType === 'signup') {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        } else {
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        }
+    }
+</script>
+
+</html>

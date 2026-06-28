@@ -1,0 +1,50 @@
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  .nav-link {
+    color: white !important;
+  }
+
+  .nav-link:hover {
+    color: #ccc !important;
+  }
+
+  .navbar-brand {
+    color: white !important;
+  }
+</style>
+<header
+  style="padding: 20px; background:rgba(16, 16, 48, 0.5); position: fixed; width: 100%; top: 0; z-index: 10; color: white;">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="navbar-brand" style="display: flex; align-items: center; gap: 10px;">
+        <img src="Images/logo.png" alt="Logo" style="height: 40px;">
+        <span style="font-size: 22px; font-weight: bold; color: white;">FutureCareer</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.php"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.php"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.php"><b>Contact</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(ellipse at center, #0a0a2a 0%, #000010 100%);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+hr {
+  color: #0a0a2a 0%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .rocket {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

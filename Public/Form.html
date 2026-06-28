@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Future Career Prediction Form</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <style>
+      :root {
+         --primary-blue: #4a90e2;
+         --dark-bg-start: #0a0a2a;
+         --dark-bg-end: #000010;
+         --form-section-bg: #1a1a3d;
+         --text-light: #f8f9fa;
+         --text-muted: #ced4da;
+      }
+
+      body {
+         margin: 0;
+         font-family: 'Segoe UI', sans-serif;
+         background: radial-gradient(ellipse at center, #0a0a2a 0%, #000010 100%);
+         color: var(--text-light);
+         overflow-x: hidden;
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      .container {
+         max-width: 900px;
+         padding-top: 30px;
+         padding-bottom: 30px;
+      }
+
+      .text-primary {
+         color: var(--primary-blue) !important;
+         font-weight: 700;
+         text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+         margin-bottom: 40px !important;
+      }
+
+      .form-section {
+         background: var(--form-section-bg);
+         border-radius: 15px;
+         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+         padding: 35px;
+         margin-bottom: 30px;
+         font-weight: 500;
+         border: 1px solid rgba(74, 144, 226, 0.3);
+         transition: all 0.3s ease-in-out;
+      }
+
+      .form-section h5 {
+         margin-bottom: 25px;
+         color: var(--primary-blue);
+         font-weight: 700;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         font-size: 1.5rem;
+      }
+
+      .form-label {
+         color: var(--text-muted);
+         font-weight: 600;
+         margin-bottom: 8px;
+      }
+
+      .form-control,
+      .form-select {
+         background-color: #2a2a4d;
+         border: 1px solid #4a4a70;
+         color: var(--text-light);
+         padding: 10px 15px;
+         border-radius: 8px;
+         transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+         background-color: #3a3a5d;
+         border-color: var(--primary-blue);
+         box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
+         color: var(--text-light);
+      }
+
+      .form-control::placeholder {
+         color: #4e4e74;
+         font-weight: 500;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container mt-5 mb-5">
+      <h2 class="text-center mb-4 text-primary">Future Career Prediction Form</h2>
+
+      <form id="careerForm" action="submit_form.php" method="POST" enctype="multipart/form-data">
+         <!-- Personal Information Section -->
+         <div class="form-section">
+            <h5><i class="fas fa-user"></i> Personal Information</h5>
+            <div class="row g-3">
+               <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Your full name" required>
+               </div>
+               <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+               </div>
+               <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g., +91 9876543210">
+               </div>
+               <div class="col-md-3">
+                  <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
+                  <input type="date" id="dob" name="dob" class="form-control" required>
+               </div>
+               <div class="col-md-3">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select id="gender" name="gender" class="form-select">
+                     <option value="" selected disabled>Select</option>
+                     <option value="Male">Male</option>
+                     <option value="Female">Female</option>
+                     <option value="Other">Other</option>
+                  </select>
+               </div>
+               <div class="col-12">
+                  <label for="location" class="form-label">Current Location <span class="text-danger">*</span></label>
+                  <input type="text" id="location" name="location" class="form-control" placeholder="City, Country" required>
+               </div>
+            </div>
+         </div>
+
+         <!-- Education Background Section -->
+         <div class="form-section">
+            <h5><i class="fas fa-graduation-cap"></i> Education Background</h5>
+            <div class="row g-3">
+               <div class="col-md-4">
+                  <label for="education" class="form-label">Highest Education Level <span class="text-danger">*</span></label>
+                  <select id="education" name="education" class="form-select" required>
+                     <option value="" selected disabled>Select</option>
+                     <option value="12th Grade/High School">12th Grade/High School</option>
+                     <option value="Graduate (Bachelor's Degree)">Graduate (Bachelor's Degree)</option>
+                     <option value="Postgraduate (Master's/PhD)">Postgraduate (Master's/PhD)</option>
+                  </select>
+               </div>
+               <div class="col-md-4">
+                  <label for="field" class="form-label">Field of Study <span class="text-danger">*</span></label>
+                  <input type="text" id="field" name="field" class="form-control" placeholder="e.g., Computer Science, Business" required>
+               </div>
+               <div class="col-md-4">
+                  <label for="institution" class="form-label">Institution</label>
+                  <input type="text" id="institution" name="institution" class="form-control" placeholder="University/College Name">
+               </div>
+               <div class="col-md-3">
+                  <label for="year" class="form-label">Year of Passing <span class="text-danger">*</span></label>
+                  <input type="number" id="year" name="year" class="form-control" placeholder="YYYY" required>
+               </div>
+            </div>
+         </div>
+
+         <!-- Skills & Interests Section -->
+         <div class="form-section">
+            <h5><i class="fas fa-tools"></i> Skills & Interests</h5>
+            <div class="mb-3">
+               <label for="mainField" class="form-label">Main Academic/Professional Field <span class="text-danger">*</span></label>
+               <select id="mainField" name="mainField" class="form-select" required>
+                  <option value="" selected disabled>Select Main Field</option>
+                  <option value="engineering">Engineering & Technology</option>
+                  <option value="science">Science</option>
+                  <option value="commerce">Commerce & Management</option>
+                  <option value="arts">Arts & Humanities</option>
+                  <option value="medical">Medical & Health Sciences</option>
+                  <option value="computer">Computer & IT</option>
+                  <option value="design">Design & Creative Arts</option>
+                  <option value="education">Education & Teaching</option>
+                  <option value="law">Law</option>
+                  <option value="agriculture">Agriculture & Environment</option>
+                  <option value="hospitality">Travel, Tourism & Hospitality</option>
+                  <option value="vocational">Vocational / Skill-Based</option>
+               </select>
+            </div>
+
+            <div class="mb-3">
+               <label for="domain" class="form-label">Specific Domain <span class="text-danger">*</span></label>
+               <select id="domain" name="domain" class="form-select" required>
+                  <option value="" selected disabled>Select Domain</option>
+               </select>
+            </div>
+
+            <div class="mb-3">
+               <label for="skillsBox" class="form-label">Technical Skills <span class="text-danger">*</span></label>
+               <select id="skillsBox" name="skillsBox" class="form-select" required>
+                  <option value="" selected disabled>Select your primary technical skill</option>
+               </select>
+            </div>
+
+            <div class="mb-3">
+               <label for="softskills" class="form-label">Soft Skills</label>
+               <input type="text" id="softskills" name="softskills" class="form-control" placeholder="e.g., Communication, Teamwork, Problem-solving">
+            </div>
+            <div class="mb-3">
+               <label for="hobbies" class="form-label">Hobbies / Interests <span class="text-danger">*</span></label>
+               <textarea id="hobbies" name="hobbies" class="form-control" placeholder="Tell us about your hobbies and interests that might relate to your career aspirations." required></textarea>
+            </div>
+         </div>
+
+         <!-- Career Preferences Section -->
+         <div class="form-section">
+            <h5><i class="fas fa-rocket"></i> Career Preferences</h5>
+            <div class="row g-3">
+               <div class="col-md-6">
+                  <label for="industry" class="form-label">Preferred Industry <span class="text-danger">*</span></label>
+                  <input type="text" id="industry" name="industry" class="form-control" placeholder="e.g., Healthcare, Technology, Finance" required>
+               </div>
+               <div class="col-md-6">
+                  <label for="workmode" class="form-label">Work Preference</label>
+                  <select id="workmode" name="workmode" class="form-select">
+                     <option value="" selected disabled>Select</option>
+                     <option value="Remote">Remote</option>
+                     <option value="On-site">On-site</option>
+                     <option value="Hybrid">Hybrid</option>
+                  </select>
+               </div>
+               <div class="col-12">
+                  <label for="goal" class="form-label">Future Goal <span class="text-danger">*</span></label>
+                  <textarea id="goal" name="goal" class="form-control" placeholder="Describe your long-term career aspirations and goals." required></textarea>
+               </div>
+            </div>
+         </div>
+
+         <!-- Additional Information Section -->
+         <div class="form-section">
+            <h5><i class="fas fa-info-circle"></i> Additional Information</h5>
+            <div class="mb-3">
+               <label for="resume" class="form-label">Upload Resume (PDF/DOC)</label>
+               <input type="file" id="resume" name="resume" class="form-control" accept=".pdf,.doc,.docx">
+            </div>
+            <div class="mb-3">
+               <label for="link" class="form-label">LinkedIn / GitHub URL</label>
+               <input type="url" id="link" name="link" class="form-control" placeholder="Optional: Link to your professional profiles">
+            </div>
+            <div class="mb-3">
+               <label for="message" class="form-label">Message / Notes</label>
+               <textarea id="message" name="message" class="form-control" placeholder="Any other information you'd like to share?"></textarea>
+            </div>
+            <div class="form-check mt-3">
+               <input class="form-check-input" type="checkbox" id="agreeToDataUsage" name="agreeToDataUsage" value="1" required>
+               <label class="form-check-label" for="agreeToDataUsage">
+                  I agree to data usage for career prediction and analysis. <span class="text-danger">*</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-4">Submit Form</button>
+         </div>
+      </form>
+   </div>
+   
+   <script src="Form.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+      // Initialize form on window load
+      document.addEventListener('DOMContentLoaded', function() {
+         const mainField = document.getElementById('mainField');
+         const domainSelect = document.getElementById('domain');
+         
+         if (mainField && domainSelect) {
+            // Set up event listeners
+            mainField.addEventListener('change', populateDomains);
+            domainSelect.addEventListener('change', populateSkills);
+            
+            // Initial population
+            populateDomains();
+         }
+      });
+   </script>
+</body>
+</html>

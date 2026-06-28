@@ -1,0 +1,342 @@
+<?php include 'header.php'; ?>
+<html lang="en">
+
+<head>
+   <title>About Us - FutureCareer</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css" />
+   <style>
+      .about-content {
+         padding: 150px 20px 100px;
+         max-width: 900px;
+         margin: auto;
+         text-align: center justify;
+      }
+
+      .innovation-section {
+         padding: 100px 20px 100px;
+         max-width: 900px;
+         margin: auto;
+         text-align: center justify;
+      }
+
+      h1,
+      h2 {
+         font-size: 34px;
+         color: #ffffff;
+         margin-bottom: 20px;
+         font-weight: bold;
+      }
+
+      p {
+         font-size: 17px;
+         line-height: 1.6;
+         margin-bottom: 18px;
+      }
+
+      .team {
+         background: #101030;
+         padding: 80px 20px;
+         text-align: center;
+      }
+
+      .team-grid {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 40px;
+         margin-top: 40px;
+      }
+
+      .team-member {
+         background: #1a1a3d;
+         padding: 20px;
+         border-radius: 12px;
+         width: 200px;
+      }
+
+      .team-member img {
+         width: 100px;
+         height: 100px;
+         border-radius: 50%;
+         margin-bottom: 15px;
+         object-fit: cover;
+      }
+
+      .timeline {
+         padding: 80px 20px;
+         text-align: center;
+      }
+
+      .timeline-step {
+         max-width: 700px;
+         margin: 0 auto 40px;
+      }
+
+      .timeline-step h4 {
+         color: #a0c4ff;
+         margin-bottom: 10px;
+
+      }
+
+      /*Vision and Mission*/
+      .vision-mission {
+         padding: 60px 0;
+         text-align: justify;
+      }
+
+      .vision-mission h2 {
+         margin-bottom: 20px;
+         font-weight: 700;
+      }
+
+      .vision-mission p {
+         line-height: 1.8;
+         font-size: 1.1rem;
+      }
+
+      /*Gallary*/
+      .gallery {
+         background: #101030;
+         padding: 80px 20px;
+         text-align: center;
+      }
+
+      .gallery-grid {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 40px;
+         margin-top: 40px;
+      }
+
+      .gallery-item {
+         background: #1a1a3d;
+         padding: 5px;
+         border-radius: 20px;
+         width: 145px;
+      }
+
+      .gallery-item img {
+         margin: 10px 0;
+         width: 120px;
+         height: 124px;
+         border-radius: 20%;
+         object-fit: cover;
+      }
+
+      /* hover */
+      /* Hover effect for team members */
+      .team-member:hover {
+         background: #292962;
+         transform: scale(1.05);
+         transition: all 0.3s ease;
+         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Hover effect for gallery images */
+      .gallery-item img:hover {
+         transform: scale(1.1);
+         transition: transform 0.3s ease;
+         border: 2px solid #a0c4ff;
+      }
+
+      /* Hover effect for timeline steps */
+      .timeline-step:hover {
+         background: #1a1a3d;
+         border-radius: 10px;
+         padding: 20px;
+         transition: all 0.3s ease;
+         box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+      }
+
+      /* Hover effect for Vision/Mission boxes */
+      .vision-box:hover,
+      .mission-box:hover {
+         background-color: #101030;
+         color: #a0c4ff;
+         padding: 25px;
+         border-radius: 12px;
+         transition: background 0.4s, color 0.4s;
+      }
+
+      /* footer */
+      /* You can move some of the footer specific styles from here to the external style.css file for better organization */
+   </style>
+</head>
+
+<body>
+
+   <div class="about-content aos-fade">
+
+      <h1>About FutureCareer</h1>
+      <p class="aos-fade">
+         At <b>FutureCareer</b>, we believe that technology can shape better career futures. Our platform leverages
+         artificial intelligence to predict the most in-demand careers of tomorrow. By analyzing global market shifts
+         and data trends, we help users make smart, forward-looking career decisions.
+      </p>
+      <p class="aos-fade">
+         Whether you're a student exploring your path, a professional looking to reskill, or an educator shaping
+         curriculum, FutureCareer offers personalized insight to navigate the AI-driven job market.
+      </p>
+      <p class="aos-fade">
+         Our mission: <b>Bridge the gap between today’s learners and tomorrow’s leaders.</b>
+      </p>
+
+   </div>
+
+   <section class="team aos-fade">
+      <div>
+         <h2>Meet the Team</h2>
+
+         <div class="team-grid">
+            <div class="team-member">
+               <img src="Images/Other Images/devyadav.jpg" alt="Team Member">
+               <h3>Dev Yadav</h3>
+               <p>Lead Developer</p>
+            </div>
+
+            <div class="team-member">
+               <img src="Images/Other Images/jayvaghela.jpg" alt="Team Member">
+               <h3>Jay Vaghela</h3>
+               <p>AI Research</p>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <section class="vision-mission  aos-fade">
+
+      <div class="container">
+         <div class="row g-4">
+
+            <div class="col-md-6 aos-fade">
+               <div class="vision-box pe-lg-4">
+                  <h2 style="text-align: center;">Our Vision</h2>
+                  <p>
+                  <div style="text-align: left justify; line-height: 2;">
+                     <b>"To create a world where no professional is left behind in the AI revolution."</b>
+                     <br><b>By 2030, we envision : </b>
+                     <br>➜ A global workforce that proactively adapts to AI-driven changes.
+                     <br>➜ Education systems that evolve in real-time with job market demands.
+                     <br>➜ Businesses and employees aligned on future skills development.
+                     <br>➜ Democratized access to AI career intelligence for all.
+                  </div>
+                  </p>
+               </div>
+            </div>
+
+            <div class="col-md-6 aos-fade">
+               <div class="mission-box ps-lg-4">
+                  <h2 style="text-align: center;">Our Mission</h2>
+                  <p>
+                  <div style="text-align: left justify; line-height: 2;">
+                     <b>"To predict tomorrow's AI careers today—and equip individuals with personalized roadmaps to
+                        succeed in them."</b>
+                     <br><b>We accomplish this by :</b>
+                     <br>➜ Combining labor market data + AI forecasting to identify high-growth careers
+                     <br>➜ Translating complex trends into actionable, human-readable insights
+                     <br>➜ Partnering with learning platforms to bridge skills gaps efficiently
+                     <br>➜ Making our tools accessible to students, professionals, and policymakers
+                  </div>
+                  </p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </section>
+
+   <section class="gallery">
+
+      <h2 class="aos-fade">Gallery</h2>
+      <div class="gallery-grid">
+
+         <div class="gallery-item aos-fade">
+            <img src="Images/Other Images/ai.jpg" alt="Gallery Image 1" class="img-fluid mb-3 img-fluid">
+         </div>
+
+         <div class="gallery-item aos-fade">
+            <img src="Images/Other Images/degree.png" alt="Gallery Image 2" class="img-fluid mb-3 img-fluid">
+         </div>
+
+         <div class="gallery-item aos-fade">
+            <img src="Images/Other Images/ufo.jpg" alt="Gallery Image 3" class="img-fluid mb-3 img-fluid">
+         </div>
+      </div>
+
+   </section>
+
+   <div class="innovation-section aos-fade">
+
+      <h1 style="margin-bottom: 30px;">Our Innovation</h1>
+      <p class="aos-fade">
+         <b>FutureCareer</b> is an AI-powered platform that redefines how individuals choose their career paths.
+      </p>
+
+      <p class="aos-fade">
+         Our system uses <b>real-time AI trend analysis</b> to identify emerging job roles across industries.
+         By analyzing global workforce data and future projections, we provide
+         <b>personalized career forecasting</b> and <b>skill development recommendations</b> tailored to each user.
+      </p>
+
+      <p class="aos-fade">
+         Our goal is to empower students, professionals, and career changers to stay ahead of the curve,
+         align with future demands, and make smarter career decisions. With FutureCareer, you're not just planning
+         your next job — you're preparing for the future.
+      </p>
+
+   </div>
+
+   <section class="timeline aos-fade">
+
+      <h2 style="margin-bottom: 40px;">Our Journey</h2>
+
+      <div class="timeline-step aos-timeline">
+         <h4>30 June 2025 - Idea Born</h4>
+         <p>We saw a gap in career guidance for the AI future and decided to solve it using AI itself.</p>
+      </div>
+
+      <div class="timeline-step aos-timeline">
+         <h4>4 June 2025 - Research & Data Collection</h4>
+         <p>We analyzed global job trends, skills in demand, and future technology forecasts.</p>
+      </div>
+
+      <div class="timeline-step aos-timeline">
+         <h4>7 June 2025 - Development Begins</h4>
+         <p>Built the web platform with a prediction engine, interactive UI, and skill matching logic.</p>
+      </div>
+
+      <div class="timeline-step aos-timeline">
+         <h4>5 July 2025 - Launch</h4>
+         <p>FutureCareer goes live — ready to guide future professionals through AI-powered insights.</p>
+      </div>
+   </section>
+   <?php include 'footer.php'; ?>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+   document.querySelectorAll('.aos-fade').forEach(el => {
+      el.setAttribute('data-aos', 'fade-up');
+      el.setAttribute('data-aos-duration', '3000');
+      el.setAttribute('data-aos-delay', '300');
+      el.setAttribute('data-aos-anchor-placement', 'top-bottom');
+   });
+
+   document.querySelectorAll('.aos-timeline').forEach(el => {
+      el.setAttribute('data-aos', 'zoom-out-down');
+      el.setAttribute('data-aos-duration', '2000');
+      el.setAttribute('data-aos-delay', '200');
+      el.setAttribute('data-aos-anchor-placement', 'top-bottom');
+   });
+
+   AOS.init();
+
+</script>
+
+</html>

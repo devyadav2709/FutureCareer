@@ -1,0 +1,63 @@
+📂 - folder
+🌐🌏 - .html
+📒 - .js
+🌠 - images
+📑 - files
+📄 default files
+📝 .txt
+💾 .json
+📗 .csv
+📕 .pdf
+🛢 database
+
+📂 Ai Career Prediction
+|➜ 📂 Public
+|   |➜ 🌏 home.html
+|   |➜ 🌏 about.html
+|   |➜ 🌏 contact.html
+|➜ 📂 Assets -all .css and .js file
+|   |➜ 🌐 style.css
+|➜ 📂 Components
+|   |➜ 🌏 Header.html
+|   |➜ 🌏 Footer.html
+|➜ 📂 Forms  -all data in this
+|   |➜ 🌏 Form.html
+|➜ 📂 LogIn-SignUp
+|   |➜ 🌏 LogIn.html
+|   |➜ 🌏 SignUp.html
+|➜ 📂 Libs
+|   |➜ 📂 Bootstrap
+|➜ 📂 Server
+|   |➜ 📂 Database
+|   |   |➜ 🛢 ai_career_predictor.sql
+|   |   |➜ 🛢 career_prediction.sql
+|   |➜ 📂 PHP
+|   |   |➜ 🐘 about.php
+|   |   |➜ 🐘 config.php
+|   |   |➜ 🐘 contact.php
+|   |   |➜ 🐘 dashboard.php
+|   |   |➜ 🐘 footer.php
+|   |   |➜ 🐘 header.php
+|   |   |➜ 🐘 index.php
+|   |   |➜ 🐘 login.php
+|   |   |➜ 🐘 logout.php
+|   |   |➜ 🐘 signup.php
+|➜ 📂 Images
+|   |➜ 📂 Footer Images
+|   |   |➜ 🌠 facebook.png
+|   |   |➜ 🌠 instagram.png
+|   |   |➜ 🌠 twitter.png
+|   |   |➜ 🌠 linkedin.png
+|   |   |➜ 🌠 whatsapp.png
+|   |➜ 📂 Team Images
+|   |   |➜ 🌠 dev.jpg
+|   |   |➜ 🌠 jay.jpg
+|   |➜ 📂 Gallary Images
+|   |➜ 📂 Other Images
+|   |➜ 🌠 rocket.png
+|   |➜ 🌠 logo.php
+ 
+ 
+ 
+ 
+📂  Ai Prediction
