@@ -154,6 +154,10 @@ Replace the images below with your own screenshots.
 
 ### Career Prediction Form
 
+![Career Prediction Form](https://github.com/user-attachments/assets/8b1cdc43-4971-4d9a-acd4-2e19831bf14a)
+![Career Prediction Form](https://github.com/user-attachments/assets/a771dec0-5d87-4fd6-b18b-4f759df2eb86)
+![Career Prediction Form](https://github.com/user-attachments/assets/9f744229-3384-47c5-b6ed-a684602bd4ba)
+
 ```markdown
 ![Career Form](screenshots/form.png)
 ```
